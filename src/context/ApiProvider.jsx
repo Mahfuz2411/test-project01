@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
 import { createContext } from "react";
 
-const UserContext = createContext(null);
+export const UserContext = createContext(null);
 
-const Provider = ({children}) => {
+const ApiProvider = ({children}) => {
     
     return (
-        <UserContext.Provider value={"value"}>
+        <UserContext.Provider value={"abcdefg"}>
             {children}
         </UserContext.Provider>
     );
 };
 
-Provider.propTypes = {
+ApiProvider.propTypes = {
     children: PropTypes.node
 }
 
-export default Provider;
+export default ApiProvider;

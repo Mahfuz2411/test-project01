@@ -11,7 +11,7 @@ import {
 import Error from './error/Error.jsx';
 import Input from './components/Input.jsx';
 import Details from './components/Details.jsx';
-import Provider from './context/provider.jsx';
+import ApiProvider from './context/ApiProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,8 +33,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider>
+    <ApiProvider>
       <RouterProvider router={router} />
-    </Provider>
+    </ApiProvider>
   </React.StrictMode>,
 )
